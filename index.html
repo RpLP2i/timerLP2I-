@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Tabata</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Logo du lycée en haut à droite -->
+    <img src="logo lp2i.png" alt="Logo LP2I" class="logo">
+    <div class="container">
+        <h1>Timer LP2I</h1>
+        <div class="settings" id="settings">
+            <div>
+                <label for="work-time">Temps de travail :</label>
+                <input type="number" id="work-time" value="20">
+            </div>
+            <div>
+                <label for="rest-time">Temps de repos :</label>
+                <input type="number" id="rest-time" value="10">
+            </div>
+            <div>
+                <label for="rounds">Nombre de rounds:</label>
+                <input type="number" id="rounds" value="8">
+            </div>
+            <div>
+                <label for="series">Nombre de séries:</label>
+                <input type="number" id="series" value="3">
+            </div>
+            <div>
+                <label for="series-rest-time">Repos entre séries :</label>
+                <input type="number" id="series-rest-time" value="30">
+            </div>
+        </div>
+        <div class="timer">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div class="status">Travail</div>
+        <div class="rounds-remaining">Rounds restants : <span id="rounds-remaining">8</span></div>
+        <div class="series-remaining">Séries restantes : <span id="series-remaining">3</span></div>
+        <div class="buttons">
+            <button id="start">Démarrer</button>
+            <button id="stop">Arrêter</button>
+            <button id="reset">Réinitialiser</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

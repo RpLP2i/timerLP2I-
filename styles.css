@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Blanc avec légère transparence */
+    background-image: url('background-image.jpg'); /* Remplacez par votre chemin d'image */
+    background-size: cover; /* Adapter l'image à la taille du conteneur */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    background-position: center; /* Centrer l'image */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.settings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.settings div {
+    margin: 10px;
+}
+
+.settings label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.settings input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 16px;
+}
+
+.timer {
+    font-size: 200px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.status {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.rounds-remaining,
+.series-remaining {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.buttons button {
+    font-size: 22px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#stop {
+    background-color: #f44336;
+    color: white;
+}
+
+#reset {
+    background-color: #ff9800;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 130px;
+    height: auto;
+    z-index: 10;
+    border-radius: 15px;
+}
